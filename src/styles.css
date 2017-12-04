@@ -1,0 +1,51 @@
+body,
+html {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+.nav-item {
+  padding: 20px;
+  cursor: pointer;
+}
+
+nav a {
+  color: white !important;
+}
+
+.idea-button {
+  border-radius: 40px;
+}
+
+.mission-statement {
+  width: 600px;
+  padding-left: 30px;
+  padding-top: 250px !important;
+}
+
+.jumbotron {
+  background-image: url("./assets/img/androxia.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbo-text {
+  padding-top: 250px;
+  color: white !important;
+}
+.services-section {
+  /* padding: 30px; */
+}
+.card-img-top {
+  height: 250px;
+}

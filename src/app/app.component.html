@@ -8,16 +8,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#services-section">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Portfolio </a>
+        <a class="nav-link" href="#portfolio">Portfolio </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#about-us">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="modal" data-target="#basicExample" (click)="fluid.show()">Contact Us</a>
+        <a class="nav-link" data-toggle="modal" data-target="#basicExample" (click)="contactUsModal.show()">Contact Us</a>
       </li>
       <li class="nav-item">
         <button type="button" class="btn btn-primary" style="padding:5px" mdbRippleRadius>Got an idea?</button>
@@ -42,16 +42,20 @@
 <!-- /Section: Jumbotron -->
 
 <!--Section: Why choose us -->
-<section class="section feature-box">
-  <!--Section heading-->
-  <div class="description">
-    <h1 class="section-heading display-4">Why choose us?</h1>
-    <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
-      veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+<section class="section feature-box" id="services-section">
+  <div class="row">
+    <div class="col-xs-12 col-md-4 offset-md-4">
+      <h1 class="section-heading display-4 text-center">Why choose us?</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-8 offset-md-2">
+      <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
+        veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+    </div>
   </div>
   <div class="row features-small pt-2">
-    <!-- <div class="col-lg-1"></div> -->
-    <div class="col-lg-5 mb-r center-on-small-only">
+    <div class="col-lg-5 mb-r center-on-small-only d-none d-md-block">
       <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/ipad-portfolio2.png" alt="" class="img-fluid z-depth-0">
     </div>
     <div class="col-lg-7">
@@ -93,10 +97,18 @@
 </section>
 
 <!--Projects section-->
-<section class="section pb-3 projects-section">
-  <h1 class="section-heading display-4">Our best projects</h1>
-  <p class="section-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<section class="section pb-3 projects-section" id="portfolio">
+  <div class="row">
+    <div class="col-xs-12 col-md-4 offset-md-4">
+      <h1 class="section-heading display-4 text-center">Portfolio</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-8 offset-md-2">
+      <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
+        veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+    </div>
+  </div>
   <div class="row text-center">
     <div class="col-lg-4 col-md-12 mb-r">
       <div class="view overlay hm-white-slight z-depth-2 waves-light" mdbRippleRadius>
@@ -107,7 +119,7 @@
       </div>
       <div class="card-body mt-1">
         <a href="" class="blue-text">
-          <h5> Wager </h5>
+          <h5>Wager</h5>
         </a>
         <h4>Keep on bettin'</h4>
         <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime facere possimus.</p>
@@ -148,58 +160,40 @@
         <h4>Shop the best items</h4>
         <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.
         </p>
-        <a class="btn btn-indigo btn-sm waves-light" mdbRippleRadius>
+        <a class="btn btn-indigo btn-sm waves-light" href="https://www.emboldenyou.com/" target="_blank" mdbRippleRadius>
           <i class="fa fa-clone left"></i> Visit Website</a>
       </div>
     </div>
-
   </div>
   <div class="row justify-content-md-center">
     <div class="col text-center">
       <h5>Excited enough to find out when our products will get released?</h5>
-      <button type="button" class="btn btn-primary waves-light" data-toggle="modal" (click)="subscribeModal.show()" mdbRippleRadius>
+    </div>
+  </div>
+  <div class="row justify-content-md-center" style="padding-top:15px">
+    <div class="col-md-3 offset-md-1">
+      <div class="md-form">
+        <input type="text" id="email" class="form-control" mdbActive>
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="col-md-2 offet-md-6" style="padding-top:10px">
+      <button type="button" class="btn btn-primary btn-md waves-light" mdbRippleRadius>
         Subscribe
       </button>
-
-      <!--Subscription Form-->
-      <div mdbModal #subscribeModal="mdb-modal" class="modal fade right" id="subscribeModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-side modal-bottom-right" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <form>
-                <p class="h5 text-center mb-4">Subscribe</p>
-                <div class="md-form">
-                  <input type="text" id="form3" class="form-control" mdbActive>
-                  <label for="form3">Your name</label>
-                </div>
-                <div class="md-form">
-                  <input type="text" id="form2" class="form-control" mdbActive>
-                  <label for="form2">Your email</label>
-                </div>
-                <div class="text-center">
-                  <button class="btn btn-indigo waves-light" mdbRippleRadius>Send
-                    <i class="fa fa-paper-plane-o ml-1"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Subscription Form-->
     </div>
   </div>
 
 </section>
 <!--/Projects section -->
 
-<div mdbModal #fluid="mdb-modal" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+<div mdbModal #contactUsModal="mdb-modal" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-dialog modal-full-height modal-right" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title w-100 text-center" id="myModalLabel">Write to us</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="fluid.hide()">
+        <h4 class="modal-title w-100 text-center">Write to us</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="contactUsModal.hide()">
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -245,72 +239,9 @@
 
 
 <!--Footer-->
-<footer class="page-footer mdb-color center-on-small-only">
-
-  <!--Footer Links-->
-  <div class="container">
-    <div class="row">
-
-      <!--First column-->
-      <div class="col-md-3 offset-md-1">
-        <h5 class="title">Footer Content </h5>
-        <p>Here you can use rows and columns here to organize your footer content.</p>
-      </div>
-      <!--/.First column-->
-
-      <hr class="hidden-md-up">
-
-      <!--Second column-->
-      <div class="col-md-2 offset-md-1">
-        <h5 class="title">Links</h5>
-        <ul>
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <!--/.Second column-->
-
-      <hr class="hidden-md-up">
-
-    </div>
-  </div>
-  <!--/.Footer Links-->
-
-  <hr>
-
-  <!--Social buttons-->
-  <div class="text-center mb-3">
-
-    <a class="btn-floating btn-small btn-fb waves-light" mdbRippleRadius>
-      <i class="fa fa-facebook"> </i>
-    </a>
-    <a class="btn-floating btn-small btn-li waves-light" mdbRippleRadius>
-      <i class="fa fa-linkedin"> </i>
-    </a>
-    <a class="btn-floating btn-small btn-ins waves-light" mdbRippleRadius>
-      <i class="fa fa-instagram"> </i>
-    </a>
-
-  </div>
-  <!--/.Social buttons-->
-
-  <!--Copyright-->
+<footer class="page-footer mdb-color">
   <div class="footer-copyright">
-    <div class="container-fluid">
-      © 2017 Copyright
-      <a href="#"> Androxia.com </a>
-    </div>
+    &copy; 2017 Copyright: <a href="#">Androxia</a>
   </div>
-  <!--/.Copyright-->
-
 </footer>
+<!--/Footer-->

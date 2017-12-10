@@ -6,7 +6,7 @@
 }
 
 .top-nav-collapse {
-  background-color: #4285F4;
+  background-color: #4285F4 !important;
 }
 
 .navbar-brand {
@@ -15,27 +15,6 @@
   padding-left: 20px;
   color: white;
 }
-
-.section {
-  padding: 20px;
-  font-family: 'Lato', sans-serif;
-  .section-heading {
-    text-align: center;
-  }
-  .section-heading,
-  .section-description {
-    width: 600px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-  }
-}
-
-.jumbotron {
-  background: url("../assets/img/androxia.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100%;
-}
-
 .jumbo-text {
   padding-top: 250px;
   color: white !important;
@@ -52,6 +31,21 @@
   width: 500px;
 }
 
+.section {
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+  .section-heading,
+  .section-description {
+    padding-bottom: 30px;
+  }
+}
+
+.jumbotron {
+  background: url("../assets/img/androxia.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+}
+
 .feature-box i {
   font-size: 30px;
 }
@@ -62,6 +56,10 @@
     height: 300px;
     width: 100%;
   }
+}
+
+.page-footer {
+  padding: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -76,5 +74,8 @@
   }
   .navbar {
     background-color: #4285F4;
+  }
+  .section-heading {
+    font-size: 48px;
   }
 }

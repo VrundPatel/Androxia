@@ -10,5 +10,5 @@
     "test.ts",
     "**/*.spec.ts"
   ],
-  "include": [ "**/*.ts", "../node_modules/angular-bootstrap-md/index.ts" ]
+  "include": [ "**/*.ts", "../node_modules/ng-mdb-pro/index.ts" ]
 }

@@ -1,6 +1,6 @@
 <!--Main Navigation-->
-<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark top-nav-collapse scrolling-navbar" [containerInside]="false">
-  <a class="navbar-brand wow bounce" href="#"> Androxia </a>
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" [containerInside]="false">
+  <a class="navbar-brand" href="#">Androxia</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,19 +8,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#services-section">Services</a>
+        <a mdbPageScroll class="nav-link" href="#services-section">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio </a>
+        <a mdbPageScroll class="nav-link" href="#portfolio">Portfolio </a>
+      </li>
+      <!-- <li class="nav-item">
+          <a mdbPageScroll class="nav-link" href="#resources">Resources</a>
+      </li> -->
+      <li class="nav-item">
+        <a mdbPageScroll class="nav-link" href="#company">Company</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about-us">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="modal" data-target="#basicExample" (click)="contactUsModal.show()">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <button type="button" class="btn btn-primary" style="padding:5px" mdbRippleRadius>Got an idea?</button>
+        <button class="btn btn-sm blue-gradient btn-rounded waves-light" mdbRippleRadius data-toggle="modal" data-target="#basicExample" (click)="contactUsModal.show()">Got an idea?</button>
       </li>
     </ul>
   </div>
@@ -31,10 +31,10 @@
 <div class="jumbotron">
   <div class="jumbo-text">
     <span>
-      <i>Let us help you connect</i>
+      <i>Our mission is to redefine the way you experience the world.</i>
     </span>
     <div class="intro-text">
-      <p class="lead">Our award-winning digital marketing services will ensure you send the right message to the right people.</p>
+      <p class="lead"></p>
       <button type="button" class="btn">Learn more</button>
     </div>
   </div>
@@ -44,71 +44,73 @@
 <!--Section: Why choose us -->
 <section class="section feature-box" id="services-section">
   <div class="row">
-    <div class="col-xs-12 col-md-4 offset-md-4">
-      <h1 class="section-heading display-4 text-center">Why choose us?</h1>
+    <div class="col-sm-4 offset-sm-1 d-none d-md-block">
+      <img src="../assets/img/mobile-stencil.jpg" alt="">
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-8 offset-md-2">
-      <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
-        veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
-    </div>
-  </div>
-  <div class="row features-small pt-2">
-    <div class="col-lg-5 mb-r center-on-small-only d-none d-md-block">
-      <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/ipad-portfolio2.png" alt="" class="img-fluid z-depth-0">
-    </div>
-    <div class="col-lg-7">
-      <div class="row pb-3">
-        <div class="col-1">
-          <i class="fa fa-hourglass-start"></i>
-        </div>
-        <div class="col-11">
-          <h5 class="feature-title">Startups</h5>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti
-            hic.
-          </p>
+    <div class="col-sm-6 offset-sm-1 services-info">
+      <div class="row">
+        <div class="col">
+          <h2 class="h1 section-heading">Services</h2>
+          <p class="grey-text">We're here to help you build your brand, reach new customers, and grow relationships.</p>
         </div>
       </div>
-      <div class="row pb-3">
-        <div class="col-1">
-          <i class="fa fa-area-chart"></i>
+      <!--Grid row-->
+      <div class="row features-small pt-2">
+
+        <!--Grid column-->
+        <div class="col-sm-10">
+
+          <!--Grid row-->
+          <div class="row pb-3">
+            <div class="col-2 col-md-1">
+              <i class="fa fa-hourglass-start"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">Capabilities</h5>
+              <p class="grey-text">Androxia offers the full range of digital marketing services from conception through launch. We strive for innovation and constantly seek ways to create unforgettable experiences</p>
+            </div>
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row pb-3">
+            <div class="col-2 col-md-1">
+              <i class="fa fa-area-chart"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">Consulting</h5>
+              <p class="grey-text">Realize a solution for your needs with the help of our experts. From workshops and seminars through global rollouts, we will work with you every step of the way to ensure engagement, satisfaction, and alignment</p>
+            </div>
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row pb-3">
+            <div class="col-2 col-md-1">
+              <i class="fa fa-credit-card-alt"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">ROI</h5>
+              <p class="grey-text">We operate with a data-first approach and carefully measure value using real metrics and tracking for success. We believe that informed decisions are the best decisions, and vet market research to support our tactics</p>
+            </div>
+          </div>
+          <!--Grid row-->
+
         </div>
-        <div class="col-11">
-          <h5 class="feature-title">Digital Marketing</h5>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti
-            hic.
-          </p>
-        </div>
+        <!--Grid column-->
+
       </div>
-      <div class="row pb-3">
-        <div class="col-1">
-          <i class="fa fa-lightbulb-o"></i>
-        </div>
-        <div class="col-11">
-          <h5 class="feature-title">Innovation</h5>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti
-            hic.
-          </p>
-        </div>
-      </div>
+      <!--Grid row-->
     </div>
   </div>
 </section>
 
 <!--Projects section-->
 <section class="section pb-3 projects-section" id="portfolio">
-  <div class="row">
-    <div class="col-xs-12 col-md-4 offset-md-4">
-      <h1 class="section-heading display-4 text-center">Portfolio</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-8 offset-md-2">
-      <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
-        veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
-    </div>
-  </div>
+  <!--Section heading-->
+  <h2 class="section-heading h1 pt-4">Portfolio</h2>
+  <!--Section description-->
+  <p class="section-description">Explore our work and some of the products we've successfully launched.</p>
   <div class="row text-center">
     <div class="col-lg-4 col-md-12 mb-r">
       <div class="view overlay hm-white-slight z-depth-2 waves-light" mdbRippleRadius>
@@ -121,9 +123,9 @@
         <a href="" class="blue-text">
           <h5>Wager</h5>
         </a>
-        <h4>Keep on bettin'</h4>
-        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime facere possimus.</p>
-        <a class="btn btn-indigo btn-sm waves-light" mdbRippleRadius>
+        <h4>Want to make a bet?</h4>
+        <p>Connect with and bet your friends on Wager, an app that keeps you on your toes!</p>
+        <a class="btn btn-sm waves-light" mdbRippleRadius>
           <i class="fa fa-clone left"></i> View project</a>
       </div>
     </div>
@@ -138,9 +140,9 @@
         <a href="" class="blue-text">
           <h5>Switz</h5>
         </a>
-        <h4>Let us plan it out!</h4>
-        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime facere possimus.</p>
-        <a class="btn btn-indigo btn-sm waves-light" mdbRippleRadius>
+        <h4>Make a plan without the headache</h4>
+        <p>Build a complete itinerary specific to any occasion with the click of a button.</p>
+        <a class="btn btn-sm waves-light" mdbRippleRadius>
           <i class="fa fa-clone left"></i> View project</a>
       </div>
 
@@ -157,10 +159,9 @@
         <a href="" class="blue-text">
           <h5>Embolden</h5>
         </a>
-        <h4>Shop the best items</h4>
-        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.
-        </p>
-        <a class="btn btn-indigo btn-sm waves-light" href="https://www.emboldenyou.com/" target="_blank" mdbRippleRadius>
+        <h4>Shop for the best items</h4>
+        <p>Explore a whole new world of quality goods with polished design.</p>
+        <a class="btn btn-sm waves-light" href="https://www.emboldenyou.com/" target="_blank" mdbRippleRadius>
           <i class="fa fa-clone left"></i> Visit Website</a>
       </div>
     </div>
@@ -237,87 +238,221 @@
   </div>
 </div>
 
-<section class="section team-section pb-3">
+<!--Section: Team v.4-->
+<section class="section pb-3" id="company">
+
+  <!--Section heading-->
+  <h2 class="section-heading h1 pt-4">About Us</h2>
+  <!--Section description-->
+  <p class="section-description">We work hard and have an amazing culture. Check out some of our teammates below.</p>
 
   <div class="row">
-    <div class="col-xs-12 col-md-4 offset-md-4">
-      <h1 class="section-heading display-4 text-center">Our amazing team</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-8 offset-md-2">
-      <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
-        veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
-    </div>
-  </div>
 
-  <div class="row text-center">
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-12 mb-r">
 
-    <div class="col-lg-4 col-md-6 mb-r">
-      <div class="avatar">
-        <img src="../assets/img/asutosh_profile.jpg" class="rounded-circle z-depth-1" alt="First sample avatar image">
-      </div>
-      <h4>Asutosh Patel</h4>
-      <h6 class="font-bold blue-text">Co-Founder</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
-      <a class="icons-sm">
-        <i class="fa fa-linkedin"> </i>
-      </a>
-      <a class="icons-sm">
-        <i class="fa fa-twitter"> </i>
-      </a>
-      <a class="icons-sm">
-        <i class="fa fa-envelope-o"> </i>
-      </a>
+      <mdb-card-rotating #cards1>
+        <!--Front Side-->
+        <div class="face front tp-box_side tp-box_front">
+
+          <!-- Image-->
+          <div class="card-up">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(132).jpg" class="img-fluid">
+          </div>
+          <!--Avatar-->
+          <div class="avatar">
+            <img src="../assets/img/asutosh_profile.jpg" class="rounded-circle img-responsive">
+          </div>
+          <!--Content-->
+          <div class="card-body">
+            <h4>Asutosh Patel</h4>
+            <p>Co-Founder</p>
+            <!--Triggering button-->
+            <a class="rotate-btn" data-card="card-1" (click)="cards1.toggle()">
+              <i class="fa fa-repeat"></i> About me</a>
+          </div>
+        </div>
+        <!--/.Front Side-->
+
+        <!--Back Side-->
+        <div class="back tp-box_side tp-box_back">
+
+          <!--Content-->
+          <h4>About me</h4>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat,
+            dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?</p>
+          <hr>
+          <!--Social Icons-->
+          <ul class="inline-ul">
+            <li>
+              <a class="icons-sm fb-ic">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icons-sm tw-ic">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icons-sm li-ic">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <!--Triggering button-->
+          <a class="rotate-btn" data-card="card-1" (click)="cards1.toggle()">
+            <i class="fa fa-undo"></i> Click here to rotate back</a>
+
+        </div>
+        <!--/.Back Side-->
+      </mdb-card-rotating>
+
     </div>
+    <!--Grid column-->
 
-    <div class="col-lg-4 col-md-6 mb-r">
-      <div class="avatar">
-        <img src="../assets/img/savannah_profile.jpg" class="rounded-circle z-depth-1 lead-person" alt="Third sample avatar image">
-      </div>
-      <h4>Savannah Taylor</h4>
-      <h6 class="font-bold blue-text">Founder</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
-      <a class="icons-sm">
-        <i class="fa fa-linkedin"> </i>
-      </a>
-      <a class="icons-sm">
-        <i class="fa fa-twitter"> </i>
-      </a>
-      <a class="icons-sm">
-        <i class="fa fa-envelope-o"> </i>
-      </a>
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-12 mb-r">
+
+      <mdb-card-rotating #cards2>
+        <!--Front Side-->
+        <div class="face front tp-box_side tp-box_front">
+
+          <!-- Image-->
+          <div class="card-up">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid">
+          </div>
+          <!--Avatar-->
+          <div class="avatar">
+            <img src="../assets/img/savannah_profile.jpg" class="rounded-circle img-responsive">
+          </div>
+          <!--Content-->
+          <div class="card-body">
+            <h4>Savannah Taylor</h4>
+            <p>Founder</p>
+            <!--Triggering button-->
+            <a class="rotate-btn" data-card="card-1" (click)="cards2.toggle()">
+              <i class="fa fa-repeat"></i> About me</a>
+          </div>
+        </div>
+        <!--/.Front Side-->
+
+        <!--Back Side-->
+        <div class="back tp-box_side tp-box_back">
+
+          <!--Content-->
+          <h4>About me</h4>
+          <hr>
+          <p>Before founding Androxia, Savannah Taylor worked in New York City for companies like WPP, Conde Nast, Vivendi, and Bloomberg L.P. She started off in finance working for a private equity and hedge fund before moving to digital marketing. She graduated with her Masters from Duke University's Fuqua School of Business.</p>
+          <hr>
+          <!--Social Icons-->
+          <ul class="inline-ul">
+            <li>
+              <a class="icons-sm fb-ic">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icons-sm tw-ic">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icons-sm li-ic">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <!--Triggering button-->
+          <a class="rotate-btn" data-card="card-1" (click)="cards2.toggle()">
+            <i class="fa fa-undo"></i> Click here to rotate back</a>
+
+        </div>
+        <!--/.Back Side-->
+      </mdb-card-rotating>
+
     </div>
+    <!--Grid column-->
 
-    <div class="col-lg-4 col-md-6 mb-r">
-      <div class="avatar">
-        <img src="../assets/img/profile_pic.jpg" class="rounded-circle z-depth-1" alt="Fourth sample avatar image">
-      </div>
-      <h4>Vrund Patel</h4>
-      <h6 class="font-bold blue-text">The guy who codes</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-12 mb-r">
 
-      <a class="icons-sm">
-        <i class="fa fa-linkedin"> </i>
-      </a>
-      <a class="icons-sm">
-        <i class="fa fa-github"> </i>
-      </a>
-      <a class="icons-sm">
-        <i class="fa fa-envelope-o"> </i>
-      </a>
+      <mdb-card-rotating #cards3>
+        <!--Front Side-->
+        <div class="face front tp-box_side tp-box_front">
+
+          <!-- Image-->
+          <div class="card-up">
+            <img src="../assets/img/code_background.jpeg" class="img-fluid">
+          </div>
+          <!--Avatar-->
+          <div class="avatar">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (8).jpg" class="rounded-circle img-responsive">
+          </div>
+          <!--Content-->
+          <div class="card-body">
+            <h4>Vrund Patel</h4>
+            <p>Full-Stack Developer</p>
+            <!--Triggering button-->
+            <a class="rotate-btn" data-card="card-1" (click)="cards3.toggle()">
+              <i class="fa fa-repeat"></i> About me</a>
+          </div>
+        </div>
+        <!--/.Front Side-->
+
+        <!--Back Side-->
+        <div class="back tp-box_side tp-box_back">
+
+          <!--Content-->
+          <h4>About me</h4>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat,
+            dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?</p>
+          <hr>
+          <!--Social Icons-->
+          <ul class="inline-ul">
+            <li>
+              <a class="icons-sm fb-ic">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icons-sm git-ic">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icons-sm li-ic">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <!--Triggering button-->
+          <a class="rotate-btn" data-card="card-1" (click)="cards3.toggle()">
+            <i class="fa fa-undo"></i> Click here to rotate back</a>
+
+        </div>
+        <!--/.Back Side-->
+      </mdb-card-rotating>
+
     </div>
+    <!--Grid column-->
 
   </div>
 
 </section>
-<!--Section: Team-->
+<!--Section: Team v.4-->
+
+<section class="section about-us-section">
+  
+</section>
 
 <!--Footer-->
 <footer class="page-footer mdb-color">
   <div class="footer-copyright">
     &copy; 2017 Copyright:
-    <a href="#">Androxia</a>
+    <a mdbPageScroll>Androxia</a>
   </div>
 </footer>
 <!--/Footer-->

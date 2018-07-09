@@ -37,7 +37,6 @@
       <p class="lead">
         <i>To redefine the way you experience the world.</i>
       </p>
-      <button type="button" class="btn">Learn more</button>
     </div>
   </div>
 </div>
@@ -171,7 +170,7 @@
       </div>
     </div>
   </div>
-  
+
   <form action="https://androxia.us17.list-manage.com/subscribe/post?u=853f5b8e4add0166096e53833&amp;id=11cff2a8fa" method="post"
     id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div class="row justify-content-md-center">
@@ -246,7 +245,7 @@
   <div class="row">
 
     <!--Grid column-->
-    <div class="col-lg-4 col-md-12 mb-r">
+    <div class="col-lg-6 col-md-12 mb-r">
 
       <mdb-card-rotating #cards1>
         <!--Front Side-->
@@ -307,7 +306,7 @@
     <!--Grid column-->
 
     <!--Grid column-->
-    <div class="col-lg-4 col-md-12 mb-r">
+    <div class="col-lg-6 col-md-12 mb-r">
 
       <mdb-card-rotating #cards2>
         <!--Front Side-->
@@ -371,73 +370,6 @@
     </div>
     <!--Grid column-->
 
-    <!--Grid column-->
-    <div class="col-lg-4 col-md-12 mb-r">
-
-      <mdb-card-rotating #cards3>
-        <!--Front Side-->
-        <div class="face front tp-box_side tp-box_front">
-
-          <!-- Image-->
-          <div class="card-up">
-            <img src="../assets/img/code_background.jpeg" class="img-fluid">
-          </div>
-          <!--Avatar-->
-          <div class="avatar">
-            <img src="../assets/img/vrund_profile.jpg" class="rounded-circle img-responsive">
-          </div>
-          <!--Content-->
-          <div class="card-body">
-            <h4>Vrund Patel</h4>
-            <p>Full-Stack Developer</p>
-            <!--Triggering button-->
-            <a class="rotate-btn" data-card="card-1" (click)="cards3.toggle()">
-              <i class="fa fa-repeat"></i> About me</a>
-          </div>
-        </div>
-        <!--/.Front Side-->
-
-        <!--Back Side-->
-        <div class="back tp-box_side tp-box_back">
-
-          <!--Content-->
-          <h4>About me</h4>
-          <hr>
-          <p>Besides a Bachelors of Science in Computer Science degree, Vrund Patel has 3 years of experience as a Full-Stack
-            developer. He is currently working at Summit Consultings as an Application Developer and Analyst. He is always
-            learning about new technologies and looking for ways to make this world a better place. Some of the languages
-            that he specializes are: Java, Swift, Javascript, and Python.
-          </p>
-          <hr>
-          <!--Social Icons-->
-          <ul class="inline-ul">
-            <li>
-              <a class="icons-sm fb-ic" href="https://www.facebook.com/vrund.patel" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a class="icons-sm git-ic" href="https://github.com/VrundPatel" target="_blank">
-                <i class="fa fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a class="icons-sm li-ic" href="https://www.linkedin.com/in/vrundpatel/" target="_blank">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-          <!--Triggering button-->
-          <a class="rotate-btn" data-card="card-1" (click)="cards3.toggle()">
-            <i class="fa fa-undo"></i> Click here to rotate back</a>
-
-        </div>
-        <!--/.Back Side-->
-      </mdb-card-rotating>
-
-    </div>
-    <!--Grid column-->
-
   </div>
 
 </section>
@@ -449,7 +381,7 @@
   <!--Footer Links-->
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col text-center">
         <ul>
           <li>
             <a href="#!">Privacy Policy</a>
@@ -458,23 +390,23 @@
             <a href="#!">Terms of Use</a>
           </li>
           <li>
-            <a href="#!">Contact Us</a>
+            <a data-toggle="modal" data-target="#basicExample" (click)="contactUsModal.show()">Contact Us</a>
           </li>
         </ul>
       </div>
-      <div class="col">
-        <div class="text-center mb-3 col-md-7 offset-md-3">
-          <a class="btn-floating btn-small btn-fb waves-light" href="https://www.facebook.com/Androxia-840864939408431/" target="_blank"
-            mdbRippleRadius>
-            <i class="fa fa-facebook"> </i>
-          </a>
-          <a class="btn-floating btn-small btn-yt waves-light" href="" target="_blank" mdbRippleRadius>
-            <i class="fa fa-youtube"> </i>
-          </a>
-          <a class="btn-floating btn-small btn-li waves-light" href="" target="_blank" mdbRippleRadius>
-            <i class="fa fa-linkedin"> </i>
-          </a>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col text-center mb-3">
+        <a class="btn-floating btn-small btn-fb waves-light" href="https://www.facebook.com/Androxia-840864939408431/" target="_blank"
+          mdbRippleRadius>
+          <i class="fa fa-facebook"> </i>
+        </a>
+        <a class="btn-floating btn-small btn-yt waves-light" href="" target="_blank" mdbRippleRadius>
+          <i class="fa fa-youtube"> </i>
+        </a>
+        <a class="btn-floating btn-small btn-li waves-light" href="" target="_blank" mdbRippleRadius>
+          <i class="fa fa-linkedin"> </i>
+        </a>
       </div>
     </div>
   </div>
